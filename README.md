@@ -1,4 +1,10 @@
-# Firebase Security Rules
+# Single Fiery Chap
+
+Set up a Firebase project, connect it with a Singly account, then drop those credentials into `app/config.coffee`. Fire it up and you have the foundation of a real-time synchronous web app with social auth user profiles.
+
+Enjoy :)
+
+### Firebase Security Rules
 
 Here are a few simple rules I've designed so far:
 
