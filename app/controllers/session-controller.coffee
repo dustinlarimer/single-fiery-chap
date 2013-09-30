@@ -153,8 +153,9 @@ module.exports = class SessionController extends Controller
     @publishEvent 'login', Chaplin.mediator.current_user
     @publishEvent 'loginStatus', true
     
-    @redirectTo @redirect.route.name if @redirect?.route?
-
+    if @redirect?.route?
+      @redirectTo @redirect.route.name, @redirect.params
+    #@redirectTo @redirect.route.name if @redirect?.route?
 
   # Logout
   # ------
